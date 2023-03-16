@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="AI-powered free fonts recommendations" />
+  <title>Font Institute</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link rel="stylesheet" href="index.css" />
+</head>
+
+<body>
+  <main>
+    <h1><span class='logo' role="img">fi</span> Font Institute</h1>
+    <blockquote id="reply">Font Institute uses AI to recommend beautiful, free fonts</blockquote>
+    <section id="response">
+      <h3><a id="suggestion" href="#"></a></h3>
+      <textarea id="sample" spellcheck="false"></textarea>
+    </section>
+    <p id="hint">Please describe the font you need</p>
+    <form>
+      <input type="text" required name="message" id="message"
+        placeholder="An elegant font for a fine-fining restaurant menu" />
+      <input type="submit" value="Request" />
+      <div class="loader" aria-hidden>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </form>
+
+    <footer>Created by <a href="https://twitter.com/ascorbic">Matt Kane</a>. Set in <a
+        href="https://fonts.google.com/specimen/Playfair+Display">Playfair
+        Display</a></footer>
+
+  </main>
+  <script type="module" src="index.mjs"></script>
+</body>
+
+</html>
