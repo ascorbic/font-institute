@@ -66,6 +66,10 @@ h6 {
   font-display: swap;
 }
 
+* {
+  font-family: "Playfair Display", serif;
+}
+
 body {
   --gutter: 1rem;
   --max-width: 1024px;
@@ -91,13 +95,11 @@ main.loaded {
 
 h1,
 h3 {
-  font-family: "Playfair Display", serif;
   font-weight: bold;
   font-feature-settings: "dlig" on;
 }
 
 h2 {
-  font-family: "Playfair Display", serif;
   font-weight: normal;
   font-variant: small-caps;
   font-size: 20px;
@@ -193,10 +195,13 @@ footer a {
 }
 
 #reply {
-  font-family: "Playfair Display", serif;
   font-size: 24px;
   margin: 2em 0;
+}
+
+#reply span {
   font-feature-settings: "dlig" on;
+  font-weight: bold;
 }
 
 #sample {
