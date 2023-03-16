@@ -48,7 +48,7 @@ function displayResult({ message, recommendation, sample, error }) {
     $("#reply").innerText = error;
     return;
   }
-  $("#response").style.display = "block";
+  $("main").classList.add("loaded");
   $("#reply").innerText = message;
 
   /** @type {HTMLTextAreaElement} */

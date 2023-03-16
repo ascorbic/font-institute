@@ -49,24 +49,22 @@ h6 {
 /* Our fonts */
 
 @font-face {
-  font-family: 'Playfair Display';
-  src: url('fonts/PlayfairDisplay-ExtraBold.woff2') format('woff2'),
-      url('fonts/PlayfairDisplay-ExtraBold.woff') format('woff');
+  font-family: "Playfair Display";
+  src: url("fonts/PlayfairDisplay-ExtraBold.woff2") format("woff2"),
+    url("fonts/PlayfairDisplay-ExtraBold.woff") format("woff");
   font-weight: bold;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Playfair Display';
-  src: url('fonts/PlayfairDisplay-Regular.woff2') format('woff2'),
-      url('fonts/PlayfairDisplay-Regular.woff') format('woff');
+  font-family: "Playfair Display";
+  src: url("fonts/PlayfairDisplay-Regular.woff2") format("woff2"),
+    url("fonts/PlayfairDisplay-Regular.woff") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
-
-
 
 body {
   --gutter: 1rem;
@@ -81,20 +79,25 @@ body {
 
 main {
   grid-column: 2;
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr;
   flex-direction: column;
-  align-items: stretch;
+  grid-template-rows: repeat(4, min-content) 1fr;
+}
+
+main.loaded {
+  grid-template-rows: min-content max-content 1fr repeat(3, min-content);
 }
 
 h1,
 h3 {
-  font-family: 'Playfair Display', serif;
-    font-weight: bold;
+  font-family: "Playfair Display", serif;
+  font-weight: bold;
   font-feature-settings: "dlig" on;
 }
 
 h2 {
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
   font-weight: normal;
   font-variant: small-caps;
   font-size: 20px;
@@ -104,7 +107,6 @@ h2 {
 h1 {
   font-size: 48px;
   border-bottom: 0.1px black solid;
-
 }
 
 h1 .logo {
@@ -114,14 +116,13 @@ h1 .logo {
 }
 h3 {
   margin-bottom: 3px;
-
 }
 #suggestion {
   font-size: 24px;
 }
 
 p {
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
 }
 
 form {
@@ -168,12 +169,12 @@ form.loading input {
   display: none;
 }
 
-a {
+h3 a {
   color: inherit;
   text-decoration: none;
 }
 
-a:link:hover {
+h3 a:link:hover {
   text-decoration: underline;
 }
 
@@ -187,12 +188,15 @@ footer {
   text-align: left;
 }
 
+footer a {
+  color: inherit;
+}
+
 #reply {
   font-family: "Playfair Display", serif;
   font-size: 24px;
   margin: 2em 0;
   font-feature-settings: "dlig" on;
-
 }
 
 #sample {
@@ -211,6 +215,12 @@ footer {
   width: 100%;
   display: none;
   margin-bottom: 1em;
+  grid-template-columns: 1fr;
+  grid-template-rows: min-content 1fr;
+}
+
+.loaded #response {
+  display: grid;
 }
 
 #hint {
@@ -276,7 +286,6 @@ footer {
   }
 }
 
-
 /* Yes, I did it desktop first */
 
 @media screen and (max-width: 600px) {
@@ -287,7 +296,7 @@ footer {
     font-size: 48px;
   }
   #reply {
-    margin: 1em 0;
+    /* margin: 1em 0; */
     font-size: 20px;
   }
 
@@ -295,5 +304,8 @@ footer {
     font-size: 32px;
     padding: 1em 0.5em;
   }
+
+  input[type="submit"] {
+    padding: 0 0.5rem;
+  }
 }
-  
