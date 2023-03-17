@@ -173,11 +173,10 @@ form.loading input {
 
 h3 a {
   color: inherit;
-  text-decoration: none;
 }
 
 h3 a:link:hover {
-  text-decoration: underline;
+   text-decoration: none;
 }
 
 footer {
