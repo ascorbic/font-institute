@@ -1,77 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Font Institute – AI-powered free font recommendations</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <meta name="description" content="AI-powered free font recommendations" />
-    <meta property="og:url" content="https://font.institute" />
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="Font Institute" />
-    <meta
-      property="og:description"
-      content="AI-powered free font recommendations"
-    />
-    <meta property="og:image" content="https://font.institute/og.png" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta property="twitter:domain" content="font.institute" />
-    <meta property="twitter:url" content="https://font.institute" />
-    <meta name="twitter:title" content="Font Institute" />
-    <meta
-      name="twitter:description"
-      content="AI-powered free font recommendations"
-    />
-    <meta name="twitter:image" content="https://font.institute/og.png" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
-    <link rel="manifest" href="/site.webmanifest" />
-    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
-    <meta name="msapplication-TileColor" content="#da532c" />
-    <meta name="theme-color" content="#ffffff" />
 
-    <link rel="stylesheet" href="index.css" />
-  </head>
+<head>
+	<meta charset="UTF-8" />
+	<title>Font Institute – AI-powered free font recommendations</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<meta name="description" content="AI-powered free font recommendations" />
+	<meta property="og:url" content="https://font.institute" />
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="Font Institute" />
+	<meta property="og:description" content="AI-powered free font recommendations" />
+	<meta property="og:image" content="https://font.institute/og.png" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta property="twitter:domain" content="font.institute" />
+	<meta property="twitter:url" content="https://font.institute" />
+	<meta name="twitter:title" content="Font Institute" />
+	<meta name="twitter:description" content="AI-powered free font recommendations" />
+	<meta name="twitter:image" content="https://font.institute/og.png" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+	<link rel="manifest" href="/site.webmanifest" />
+	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
+	<meta name="msapplication-TileColor" content="#da532c" />
+	<meta name="theme-color" content="#ffffff" />
+	<link rel="stylesheet" href="index.css" />
+</head>
 
-  <body>
-    <main>
-      <h1><span class="logo" role="img">fi</span> Font Institute</h1>
-      <blockquote id="reply">
-        <span>Font Institute</span> uses AI to recommend beautiful, free fonts
-      </blockquote>
-      <section id="response">
-        <h3><a id="suggestion" href="#"></a></h3>
-        <textarea id="sample" spellcheck="false"></textarea>
-      </section>
-      <label id="hint" for="message">Please describe the font you need</label>
-      <form>
-        <input
-          type="text"
-          required
-          name="message"
-          id="message"
-          placeholder="An elegant font for a fine-dining restaurant menu"
-        />
-        <input type="submit" value="Request" />
-        <div class="loader" aria-hidden>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-        </div>
-      </form>
-      <div></div>
+<body>
+	<main>
+		<h1><span class="logo" role="img">fi</span> Font Institute</h1>
+		<blockquote id="reply">
+			<span>Font Institute</span> uses AI to recommend beautiful, free fonts
+		</blockquote>
+		<section id="response"></section>
+		<label id="hint" for="message">Please describe the font you need</label>
+		<form>
+			<input type="text" required name="message" id="message"
+				placeholder="An elegant font for a fine-dining restaurant menu" />
+			<input type="submit" value="Request" />
+			<div class="loader" aria-hidden>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+			</div>
+		</form>
+		<div></div>
 
-      <footer>
-        Created by <a href="https://twitter.com/ascorbic">Matt Kane</a>. Set in
-        <a href="https://fonts.google.com/specimen/Playfair+Display"
-          >Playfair Display</a
-        >. <a href="https://github.com/ascorbic/font-institute">Code</a>.
-      </footer>
-    </main>
-    <script type="module" src="index.mjs"></script>
-  </body>
+		<footer>
+			Created by <a href="https://twitter.com/ascorbic">Matt Kane</a>. Set in
+			<a href="https://fonts.google.com/specimen/Playfair+Display">Playfair Display</a>.
+			<a href="https://github.com/ascorbic/font-institute">Code</a>.
+		</footer>
+	</main>
+	<script type="module" src="index.mjs"></script>
+</body>
+
 </html>
