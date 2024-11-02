@@ -58,7 +58,7 @@ function createSampleField(family, sample) {
   textarea.value = sample;
   textarea.style.opacity = "0";
   textarea.style.display = "block";
-  textarea.style.fontFamily = family;
+  textarea.style.fontFamily = JSON.stringify(family);
 
   section.appendChild(heading);
   section.appendChild(textarea);
